@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  --text-color: hsl(0, 0%, 94%);
+  --relevance-color: hsl(220, 21%, 14%, 0.5);
+  --accent-color: hsl(32, 94%, 60%);
+  --margin: 18px;
+}
+
+html,
+#root,
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  /* color: var(--text-color); */
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 8vh;
+}
+nav > * {
+  margin: 0 var(--margin);
+}
+nav > a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: var(--text-color);
+}
+
+/* SECTION 1 */
+
+#section-1 {
+  /* background-image: url("imgs/hero.jpg"); */
+  background-size: cover;
+  background-position: center 80%;
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  /* color: var(--text-color); */
+}
+
+video {
+  position: absolute;
+  top: 0px;
+  pointer-events: none;
+  z-index: -2;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+.video-cover {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.location {
+  position: relative;
+  top: 89vh;
+  left: var(--margin);
+  width: fit-content;
+  font-size: 1.8rem;
+}
+
+.expand-more {
+  position: absolute;
+  left: 50vw;
+  top: 98vh;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.arrow-down {
+  /* position: absolute; */
+  display: block;
+  margin: 0 auto;
+  /* width: 10px; */
+  /* height: 38px; */
+}
+.arrow-down:after {
+  content: "";
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 1rem;
+  height: 1rem;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  -moz-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+/* SECTION 2 */
+
+#section-2 {
+  background-color: #d7d9d8;
+  /* max-width: 100%; */
+  width: 100%;
+  height: 100vh;
+}
+
+.card {
+  /* background-color: black; */
+  /* border: 1px solid;
+  border-radius: 0.4rem; */
+  position: relative;
+  width: 60vw;
+  /* height: 50vh; */
+  top: 20vh;
+  left: calc(var(--margin) * 6);
+}
+
+.claim > h1 {
+  font-size: 10rem;
+  font-weight: 400;
+  line-height: 9rem;
+  color: black;
+  margin: 0;
+}
+
+.claim > p {
+  font-size: 3rem;
+  margin: var(--margin) 0;
+}
+
+#partners {
+  background-color: var(--accent-color);
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 30rem;
+}
