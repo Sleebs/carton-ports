@@ -4,26 +4,26 @@
   --color: blanchedalmond;
   --cards-color: 255, 255, 255;
 }
-
 #root,
 body {
-  background-color: var(--bg-color);
   color: var(--color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
 }
 
+.brands-section {
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .brands-container {
-  /* height: 80vh; */
-  width: 90%;
+  margin: 10vh 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin: 10vh 0;
 }
 
 .brand-card {

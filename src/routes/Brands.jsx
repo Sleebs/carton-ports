@@ -65,8 +65,10 @@ function Items() {
 
 export default function Brands() {
   return (
-    <div className='brands-container'>
-      <Items />
+    <div className='brands-section'>
+      <div className='brands-container'>
+        <Items />
+      </div>
     </div>
   );
 }
